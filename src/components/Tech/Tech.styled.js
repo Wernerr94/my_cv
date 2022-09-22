@@ -19,6 +19,7 @@ export const List = styled.ul`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0;
+
   @media (min-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,6 +29,9 @@ export const List = styled.ul`
     width: ${pxToRem(140)};
     height: auto;
     margin-bottom: ${pxToRem(20)};
+    @media (min-width: 400px) {
+      margin-right: ${pxToRem(20)};
+    }
     & img {
       width: 100%;
       object-fit: contain;

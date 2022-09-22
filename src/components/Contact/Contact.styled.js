@@ -4,15 +4,36 @@ import { pxToRem } from "../../helpers/variables";
 import { Field, Form } from "formik";
 
 export const ContactSection = styled.section`
+  max-width: 1024px;
   margin: ${pxToRem(10)};
   padding: ${pxToRem(10)};
   background-color: ${vars.darkGreen};
+  @media (min-width: 768px) {
+    & .contacts {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  @media (min-width: 1024px) {
+    margin-inline: ${pxToRem(120)};
+    justify-content: flex-end;
+  }
+  @media (min-width: 1440px) {
+    margin: auto;
+  }
 `;
 export const Title = styled.h2`
   font-family: ${vars.mainFont};
   font-size: ${vars.title};
   color: ${vars.white};
   text-align: center;
+`;
+export const InfoContainer = styled.div`
+  @media (min-width: 768px) {
+    margin-top: ${pxToRem(20)};
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const ContactItem = styled.p`
   font-family: ${vars.mainFont};
@@ -22,9 +43,14 @@ export const ContactItem = styled.p`
   & span {
     margin-right: ${pxToRem(20)};
   }
-  & a {
-    color: ${vars.orange};
-    text-decoration: none;
+`;
+export const Link = styled.a`
+  color: ${vars.orange};
+  text-decoration: none;
+  & img {
+    display: block;
+    width: ${pxToRem(30)};
+    margin: ${pxToRem(40)} auto;
   }
 `;
 

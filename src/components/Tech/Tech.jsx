@@ -21,33 +21,38 @@ export default function Tech() {
       <List>
         <li>
           <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
-            <img src="/public/logo512.png" alt="react logo" />
+            <img src={require("../../img/logo512.png")} alt="react logo" />
           </ScrollAnimation>
         </li>
 
         <li>
-          <img src="/src/redux.png" alt="redux logo" />
+          <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
+            <img src={require("../../img/redux.png")} alt="redux logo" />
+          </ScrollAnimation>
         </li>
         <li>
-          <img src="/js.png" alt="JavaScript logo" />
+          <img src={require("../../img/js.png")} alt="JavaScript logo" />
         </li>
         <li>
-          <img src="/html.png" alt="HTML logo" />
+          <img src={require("../../img/html.png")} alt="HTML logo" />
         </li>
         <li>
-          <img src="/css3.png" alt="CSS logo" />
+          <img src={require("../../img/css3.png")} alt="CSS logo" />
         </li>
         <li>
-          <img src="/sass.png" alt="SASS logo" />
+          <img src={require("../../img/sass.png")} alt="SASS logo" />
         </li>
         <li>
-          <img src="/styled.png" alt="styled-components logo" />
+          <img
+            src={require("../../img/styled.png")}
+            alt="styled-components logo"
+          />
         </li>
         <li>
-          <img src="/github.png" alt="GIT logo" />
+          <img src={require("../../img/github.png")} alt="GIT logo" />
         </li>
         <li>
-          <img src="/PS.png" alt="Adobe Photoshop logo" />
+          <img src={require("../../img/PS.png")} alt="Adobe Photoshop logo" />
         </li>
       </List>
       <LangList onClick={() => setFill(!fill)}>

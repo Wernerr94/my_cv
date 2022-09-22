@@ -3,7 +3,9 @@ import { Formik } from "formik";
 import {
   ContactSection,
   Title,
+  InfoContainer,
   ContactItem,
+  Link,
   FormContainer,
   StyledField,
   StyledTextArea,
@@ -30,62 +32,67 @@ export default function Contact() {
   return (
     <ContactSection id="contact">
       <Title>Contact</Title>
-      <ContactItem>
-        <span>email:</span>
-        <a href="mailto:o.verner.work@gmail.com">o.verner.work@gmail.com</a>
-      </ContactItem>
-      <ContactItem>
-        <span>tel.:</span>
-        <a href="tel:+420-776-559-353">776-559-353</a>
-        <a
-          href="https://www.linkedin.com/in/oleksandr-verner-09612a23a/"
-          target="blank"
+      <div className="contacts">
+        <InfoContainer>
+          <ContactItem>
+            <span>email:</span>
+            <Link href="mailto:o.verner.work@gmail.com">
+              o.verner.work@gmail.com
+            </Link>
+          </ContactItem>
+          <ContactItem>
+            <span>tel.:</span>
+            <Link href="tel:+420-776-559-353">776-559-353</Link>
+            <Link
+              href="https://www.linkedin.com/in/oleksandr-verner-09612a23a/"
+              target="blank"
+            >
+              <img
+                src={require("../../img/linkedin.png")}
+                alt="linkedin logo"
+              />
+            </Link>
+          </ContactItem>
+        </InfoContainer>
+
+        <Formik
+          initialValues={initialValues}
+          validationSchema={schema}
+          onSubmit={handleSubmit}
         >
-          <img
-            src="/linkedin.png"
-            alt="linkedin logo"
-            style={{ width: "30px", display: "block", margin: "20px auto" }}
-          />
-        </a>
-      </ContactItem>
+          <FormContainer>
+            <label>
+              <StyledField
+                type="text"
+                name="guestName"
+                placeholder="Name"
+                autoComplete="off"
+              />
+            </label>
+            <label>
+              <StyledField
+                type="email"
+                name="email"
+                placeholder="Email"
+                autoComplete="off"
+              />
+            </label>
+            <label>
+              <StyledTextArea
+                type="text"
+                name="message"
+                placeholder="Message..."
+                component="textarea"
+                rows="5"
+                cols="35"
+                autoComplete="off"
+              />
+            </label>
 
-      <Formik
-        initialValues={initialValues}
-        validationSchema={schema}
-        onSubmit={handleSubmit}
-      >
-        <FormContainer>
-          <label>
-            <StyledField
-              type="text"
-              name="guestName"
-              placeholder="Name"
-              autoComplete="off"
-            />
-          </label>
-          <label>
-            <StyledField
-              type="email"
-              name="email"
-              placeholder="Email"
-              autoComplete="off"
-            />
-          </label>
-          <label>
-            <StyledTextArea
-              type="text"
-              name="message"
-              placeholder="Message..."
-              component="textarea"
-              rows="10"
-              cols="35"
-              autoComplete="off"
-            />
-          </label>
-
-          <SubmitButton type="submit">Send</SubmitButton>
-        </FormContainer>
-      </Formik>
+            <SubmitButton type="submit">Send</SubmitButton>
+          </FormContainer>
+        </Formik>
+      </div>
     </ContactSection>
   );
 }
