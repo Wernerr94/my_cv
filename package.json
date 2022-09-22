@@ -2,7 +2,7 @@
   "name": "my-cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wernerr94.github.io/phonebookApp/",
+  "homepage": "https://wernerr94.github.io/my_cv/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

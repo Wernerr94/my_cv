@@ -17,16 +17,16 @@ export default function Projects() {
         {/* do slider */}
         <List>
           <ListItem>
-            <img src="/1.png" alt="screenshot" />
+            <img src="/public/1.png" alt="screenshot" />
           </ListItem>
           <ListItem>
-            <img src="/2.png" alt="screenshot" />
+            <img src="/public/2.png" alt="screenshot" />
           </ListItem>
           <ListItem>
-            <img src="/3.png" alt="screenshot" />
+            <img src="/public/3.png" alt="screenshot" />
           </ListItem>
           <ListItem>
-            <img src="/4.png" alt="screenshot" />
+            <img src="/public/4.png" alt="screenshot" />
           </ListItem>
           {/* do screnshoot with modal & mainUser Inventory */}
         </List>

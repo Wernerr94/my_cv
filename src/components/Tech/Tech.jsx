@@ -21,12 +21,12 @@ export default function Tech() {
       <List>
         <li>
           <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
-            <img src="/logo512.png" alt="react logo" />
+            <img src="/public/logo512.png" alt="react logo" />
           </ScrollAnimation>
         </li>
 
         <li>
-          <img src="/redux.png" alt="redux logo" />
+          <img src="/src/redux.png" alt="redux logo" />
         </li>
         <li>
           <img src="/js.png" alt="JavaScript logo" />
