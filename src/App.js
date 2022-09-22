@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import "./App.css";
+// import Navigation from "./components/Navigation/Navigation";
+// import Hello from "./components/Hello/Hello";
+import About from "./components/About/About";
+import Tech from "./components/Tech/Tech";
+import Courses from "./components/Courses/Courses";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import { lazy } from "react";
 
-function App() {
+const Navigation = lazy(() => import("./components/Navigation/Navigation"));
+const Hello = lazy(() => import("./components/Hello/Hello"));
+export default function App() {
+  const scrollToElement = (el) =>
+    el.current.scrollIntoView({ behavior: "smooth" });
+  const about = useRef("about");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation scrollToElement={scrollToElement} about={about} />
+      <Hello />
+      <About about={about} />
+      <Tech />
+      <Courses />
+      <Projects />
+      <Contact />
     </div>
   );
 }
-
-export default App;

@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+
+
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  rgba(82, 121, 111, 0.5);
+    background-image: linear-gradient(
+        to top,
+        rgba(82, 121, 111, 0.5),
+        rgba(47, 62, 70, 0.5)
+      ),
+      url("https://i.pinimg.com/736x/f5/96/27/f59627ef5f18a900c1318fbe4e43916c--model-headshots-men-photography.jpg");
+      background-size: 100%;
+      background-repeat: repeat-y;
 }
+ul,li {
+    list-style: none;
+    margin: 0;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+	scroll-behavior: smooth;
+    transition-duration: 5s;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
