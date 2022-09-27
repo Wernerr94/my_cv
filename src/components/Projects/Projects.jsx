@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Wrapper,
   ProjectsSection,
   Title,
   ProjectArticle,
@@ -7,41 +8,41 @@ import {
   List,
   ListItem,
   Description,
-} from "./Projects,styled";
+} from "./Projects.styled";
+import Contact from "../Contact/Contact";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
-    <ProjectsSection id="projects">
-      <Title>Projects</Title>
-      <ProjectArticle>
-        <ProjectName>Munchkin Fallout</ProjectName>
-        {/* do slider */}
-        <List>
-          <ListItem>
-            <img src={require("../../img/1.png")} alt="screenshot" />
-          </ListItem>
-          <ListItem>
-            <img src={require("../../img/2.png")} alt="screenshot" />
-          </ListItem>
-          <ListItem>
-            <img src={require("../../img/3.png")} alt="screenshot" />
-          </ListItem>
-          <ListItem>
-            <img src={require("../../img/4.png")} alt="screenshot" />
-          </ListItem>
-          {/* do screnshoot with modal & mainUser Inventory */}
-        </List>
-        <Description>
-          Munchkin fallout is a board game(3-6 players) that I and my friends
-          enjoyed playing. We can say that it has become one of the additional
-          fervors of interest in programming. I remember how there was a very
-          big desire to write this game. With a friend, we decided to bring it
-          to the web. It's been a little bit of a challenge for me since this is
-          my first major project. Now it's currently in progress.
-        </Description>
-        <Description>
-          We used React.js(backend/frontend), styled-components, socket.io
-        </Description>
-      </ProjectArticle>
-    </ProjectsSection>
+    <Wrapper>
+      <ProjectsSection id="projects">
+        <Title>Projects</Title>
+        <ProjectArticle>
+          <ProjectName>Munchkin Fallout</ProjectName>
+          {/* do slider */}
+          <List>
+            <ListItem>
+              <img src={require("../../img/1.png")} alt="screenshot" />
+            </ListItem>
+            <ListItem>
+              <img src={require("../../img/2.png")} alt="screenshot" />
+            </ListItem>
+            <ListItem>
+              <img src={require("../../img/3.png")} alt="screenshot" />
+            </ListItem>
+            <ListItem>
+              <img src={require("../../img/4.png")} alt="screenshot" />
+            </ListItem>
+            {/* do screnshoot with card modal & mainUser Inventory */}
+          </List>
+          <Description>{t("munchkin")}</Description>
+          <Description>{t("munchkinTech")}</Description>
+        </ProjectArticle>
+      </ProjectsSection>
+      <Contact />
+    </Wrapper>
   );
 }

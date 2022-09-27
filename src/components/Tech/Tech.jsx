@@ -1,77 +1,77 @@
-import React, { useState } from "react";
-import {
-  TechContainer,
-  List,
-  LangList,
-  LangProgresMax,
-  LangProgresMid,
-} from "./Tech.styled";
-import { useSpring } from "@react-spring/web";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css";
+import React, { useRef } from "react";
+import { Wrapper, TechContainer, List } from "./Tech.styled";
+import { useSpring, animated } from "@react-spring/web";
+import useIntersection from "../../hooks/useIntersection";
+import LanguageList from "../LangList/LanguageList";
+import Courses from "../Courses/Courses";
 
 export default function Tech() {
-  const [fill, setFill] = useState(false);
-  const propsMax = useSpring({ width: fill ? 200 : 0 });
-  const propsMid = useSpring({ width: fill ? 100 : 0 });
+  const ref = useRef();
+  const inViewport = useIntersection(ref, "100px");
+  const [fadeIn, api] = useSpring(() => ({
+    from: { opacity: 0, scale: 0.1 },
+    config: {
+      duration: 300,
+    },
+  }));
+  if (inViewport) {
+    api.start({
+      opacity: 1,
+      scale: 1,
+    });
+  }
 
-  // do list with SVG icons
+  const bubble = useSpring({
+    loop: { reverse: true },
+    from: { scale: 0.95 },
+    to: { scale: 1.05 },
+    config: {
+      duration: 1000,
+    },
+  });
+  const bubbleReverse = useSpring({
+    loop: { reverse: true },
+    from: { scale: 1.05 },
+    to: { scale: 0.95 },
+    config: {
+      duration: 1000,
+    },
+  });
+  const logoList = [
+    "logo512.png",
+    "redux.png",
+    "js.png",
+    "html.png",
+    "css3.png",
+    "sass.png",
+    "styled.png",
+    "github.png",
+    "PS.png",
+  ];
+
   return (
-    <TechContainer id="tech">
-      <List>
-        <li>
-          <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
-            <img src={require("../../img/logo512.png")} alt="react logo" />
-          </ScrollAnimation>
-        </li>
-
-        <li>
-          <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
-            <img src={require("../../img/redux.png")} alt="redux logo" />
-          </ScrollAnimation>
-        </li>
-        <li>
-          <img src={require("../../img/js.png")} alt="JavaScript logo" />
-        </li>
-        <li>
-          <img src={require("../../img/html.png")} alt="HTML logo" />
-        </li>
-        <li>
-          <img src={require("../../img/css3.png")} alt="CSS logo" />
-        </li>
-        <li>
-          <img src={require("../../img/sass.png")} alt="SASS logo" />
-        </li>
-        <li>
-          <img
-            src={require("../../img/styled.png")}
-            alt="styled-components logo"
-          />
-        </li>
-        <li>
-          <img src={require("../../img/github.png")} alt="GIT logo" />
-        </li>
-        <li>
-          <img src={require("../../img/PS.png")} alt="Adobe Photoshop logo" />
-        </li>
-      </List>
-      <LangList onClick={() => setFill(!fill)}>
-        <li>
-          English
-          <LangProgresMid style={propsMid} />
-        </li>
-        <li>
-          Czech
-          <LangProgresMid style={propsMid} />
-        </li>
-        <li>
-          Ukranian
-          <LangProgresMax style={propsMax} />
-        </li>
-        <li>
-          Russian <LangProgresMax style={propsMax} />
-        </li>
-      </LangList>
-    </TechContainer>
+    <Wrapper>
+      <TechContainer style={fadeIn} ref={ref} id="tech">
+        <List>
+          {logoList.map((logo, index) => {
+            if (index % 2) {
+              return (
+                <animated.li style={bubbleReverse} key={logo}>
+                  <img src={require(`../../img/${logo}`)} alt="react logo" />
+                </animated.li>
+              );
+            } else {
+              return (
+                <animated.li style={bubble} key={logo}>
+                  <img src={require(`../../img/${logo}`)} alt="react logo" />
+                </animated.li>
+              );
+            }
+          })}
+        </List>
+      </TechContainer>
+      <LanguageList />
+      <Courses />
+    </Wrapper>
   );
 }

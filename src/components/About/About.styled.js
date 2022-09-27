@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import vars, { pxToRem } from "../../helpers/variables";
+import { animated } from "react-spring";
 
 export const BoxContainer = styled.article`
   background-color: ${vars.darkGreen};
@@ -25,11 +26,22 @@ export const Title = styled.h1`
   font-family: ${vars.mainFont};
   font-weight: 700;
 `;
-export const Description = styled.p`
+export const Description = styled(animated.p)`
   color: ${vars.white};
   font-family: ${vars.italicFont};
   font-weight: 300;
   font-size: ${vars.md};
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-bottom: ${pxToRem(1)} solid ${vars.orange};
+    margin-top: ${pxToRem(40)};
+    @media (min-width: 768px) {
+      margin-top: ${pxToRem(100)};
+    }
+  }
   @media (min-width: 768px) {
     line-height: ${vars.xl};
   }
@@ -39,10 +51,14 @@ export const ShortResumeButton = styled.div`
   height: ${pxToRem(60)};
   border: ${pxToRem(1)} solid ${vars.orange};
   margin: auto;
+  margin-top: ${pxToRem(40)};
   padding: ${pxToRem(20)};
+  @media (min-width: 1024px) {
+    margin-top: ${pxToRem(80)};
+  }
   & span {
     color: ${vars.white};
-    font-size: ${vars.md};
+    font-size: ${vars.sm};
     font-family: ${vars.mainFont};
   }
   &:focus {
@@ -50,16 +66,5 @@ export const ShortResumeButton = styled.div`
   }
   &:active {
     transform: scale(0.95);
-  }
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    margin: auto;
-    border-bottom: ${pxToRem(1)} solid ${vars.orange};
-    margin-top: ${pxToRem(70)};
-    @media (min-width: 768px) {
-      margin-top: ${pxToRem(100)};
-    }
   }
 `;

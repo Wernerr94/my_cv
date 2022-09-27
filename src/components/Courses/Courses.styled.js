@@ -11,6 +11,7 @@ export const CoursesSection = styled.section`
   max-width: 1440px;
   margin: ${pxToRem(10)};
   background-color: ${vars.darkGreen};
+  cursor: pointer;
   @media (min-width: 768px) {
     width: 70%;
     margin: auto;

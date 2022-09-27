@@ -1,0 +1,45 @@
+{
+  "common": {
+    "h": "DOMŮ",
+    "a": "O MNĚ",
+    "t": "TECH",
+    "e": "VZDĚLÁNÍ",
+    "p": "PROJEKTY",
+    "c": "KONTAKT",
+    "i": "JSEM",
+    "position": "Vývojář frontend",
+
+    "about": "Od chvíle, kdy jsem napsal svůj první řádek kódu, jsem se naprosto zamiloval do programování. Vývoj softwaru pro mě nikdy nebyl 'jen prací', zapojil mě do výzvy neustálého učení a zlepšování mých dovedností. V roce 2022 byly dokončeny frontendové vývojové kurzy html&css, JavaScript and React.js.",
+
+    "html": "Sémantické HTML - Technologie CSS - Technologie Flexbox - Responzivní web - SASS",
+    "html1": " - Úvod - HTML - Značky a atributy - Přehled hlavních značek - Blokové a čárové prvky - Absolutní a relativní cesty - Vlastnosti grafických formátů - Náhrady znaků - Pravidla spouštění kódu - Vývojářské nástroje - Validace HTML dokumentu ",
+    "html2": "- Úvod - Části projektu Git - Stavy Git - Základy Git - Proces práce s projektem Git - Práce s Git z konzole - soubor .gitignore",
+    "html3": " - Technologie CSS - Syntaxe CSS - Typy šablon stylů - Typy selektorů - Selektory seskupení - Dědičnost, kaskáda, specifičnost - Model vizuálního formátování - Blokové a čárové prvky - Funkce okrajů - Horizontální a vertikální zarovnání - Formátování textu - Pozadí",
+    "html4": " - Práce s barvou - Přechod CSS - Pseudotřídy a pseudoprvky - Float - Filtry CSS -Počítadla CSS",
+    "html5": " - Umístění prvků - Vlastnost z-index - Rozvržení rozbalovací nabídky - Standard HTML5 - Média HTML5 - Proměnné CSS",
+    "html6": " - Technologie Flexbox - Stíny CSS - Transformace CSS - Přechody CSS - Animace CSS",
+    "html7": " - Práce s písmy - Absolutní a relativní jednotky CSS - Tabulky - Formuláře",
+    "html8": " - Úvod do responzivního webového designu - Nové přístupy k rozvržení - Responzivní metaznačka - Chrome DevTools - Filozofie responzivního webového designu - Pravidla responzivního rozvržení - Mobilní zařízení vs. Desktop - Dotazy médií - Responzivní obrázky - Mobilní zařízení css",
+    "html9": " - Koncept modulární mřížky - Práce s mřížkou během rozvržení - Napsat mřížku od začátku - CSS Frameworks - Twitter Bootstrap 4 - CSS mřížka - Pixel perfect layout",
+    "html10": " - Kompatibilita mezi různými prohlížeči - Půvabná degradace a progresivní vylepšování - Obrazovky s vysokou hustotou pixelů - Příprava zdrojů pro Retina - Základy SVG - Metodika BEM",
+    "html11": " - CSS preprocesory: SASS - Úvod do atomizace - Mikrodata",
+
+    "js": " Pole - Objekty - Funkce - OOP - Konstruktory - Třídy ES6 - Objektový model dokumentu - NPM - Webpack - Asynchronní JavaScript - Promise API - REST API - CRUD",
+    "js1": " - Co je JavaScript? - Připojení skriptu - Karta Console v Chrome DevTools - Syntaxe jazyka - Proměnné a datové typy - Uživatelská zkušenost - Hlavní operátory - Číslo - Řetězec - Logické operátory - Větvení - Rozsah - Cykly",
+    "js2": " - Pole - Přiřazení odkazem a hodnotou - Metody pole - Funkce - Funkce šipek",
+    "js3": "Objekty - Procházení objektem - Operace rozprostření a odpočinku - Destrukturalizace",
+    "js4": " - Funkce zpětného volání - Zásobník volání a lexikální prostředí - Uzavření - Klíčové slovo toto",
+    "js5": " - OOP - Konstruktory - Prototypy - Třídy ES6",
+    "js6": " - imperativní a deklarativní kód - čisté funkce - metody iterace pole",
+    "js7": " - Objektový model dokumentu - Navigace DOM - Vlastnosti a atributy DOM -Vytváření a mazání webů - Události - Proces vytváření webové stránky",
+    "js8": " - Propagace. Emerze. Delegování - Throttle and Debounce - IntersectionObserver API",
+    "js9": " - Node.js - NPM - Modularita kódu - Webpack",
+    "js10": " - Pluginy a knihovny - Standardizace - JSON - Ukládání informací o klientovi",
+    "js11": " - Asynchronní JavaScript - Třída Datum - Promise API - Smyčka událostí",
+    "js12": " - Protokoly přenosu dat - REST API - AJAX a Fetch API - Dotazy mezi doménami - CRUD",
+
+    "react": "JSX - Moduly CSS - Komponenty třídy - Posluchače - Formuláře - HTTP dotazy - React Hook - Funkční komponenty - React Router DOM - Redux Toolkit - Async Redux - RTKQuery - Web Token",
+    
+    "munchkin": "Munchkin fallout je desková hra (3-6 hráčů), kterou jsme si s kamarády užili. Mohu říci, že se stala jedním z dalších zápalů zájmu o programování. Vzpomínám si, jak byla velká touha napsat tuto hru. S přítelem jsme se rozhodli přinést to na web. Byla to pro mě trochu výzva, protože je to můj první velký projekt. Nyní probíhá."
+  }
+}

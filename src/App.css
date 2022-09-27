@@ -1,21 +1,12 @@
-
-
 * {
     box-sizing: border-box;
+   
 }
 
 body{
     margin: 0;
     padding: 0;
     background-color:  rgba(82, 121, 111, 0.5);
-    background-image: linear-gradient(
-        to top,
-        rgba(82, 121, 111, 0.5),
-        rgba(47, 62, 70, 0.5)
-      ),
-      url("https://i.pinimg.com/736x/f5/96/27/f59627ef5f18a900c1318fbe4e43916c--model-headshots-men-photography.jpg");
-      background-size: 100%;
-      background-repeat: repeat-y;
 }
 ul,li {
     list-style: none;
@@ -24,7 +15,8 @@ ul,li {
 }
 html {
 	scroll-behavior: smooth;
-    transition-duration: 5s;
+   
+    
 }
 @media screen and (prefers-reduced-motion: reduce) {
 	html {

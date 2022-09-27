@@ -15,7 +15,7 @@ export const ContactSection = styled.section`
     }
   }
   @media (min-width: 1024px) {
-    margin-inline: ${pxToRem(120)};
+    margin-inline: auto;
     justify-content: flex-end;
   }
   @media (min-width: 1440px) {

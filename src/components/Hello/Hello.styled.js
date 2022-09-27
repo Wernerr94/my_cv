@@ -1,6 +1,29 @@
 import styled from "styled-components";
 import vars, { pxToRem } from "../../helpers/variables";
+import myImg from "../../img/me.jpg";
 
+export const Container = styled.div`
+  background-image: linear-gradient(
+      to top,
+      rgba(82, 121, 111, 0.5),
+      rgba(47, 62, 70, 0.5)
+    ),
+    url(${myImg});
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: ${pxToRem(60)} 0;
+  @media (max-width: 500px) {
+    background-position: -60%;
+  }
+  @media (max-width: 767px) {
+    background-position: top ${pxToRem(200)};
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: ${pxToRem(180)} 0;
+    background-position: -85% 0;
+  }
+`;
 export const Wrapper = styled.div`
   height: ${pxToRem(300)};
   /* background-image: linear-gradient(
@@ -8,16 +31,13 @@ export const Wrapper = styled.div`
       rgba(82, 121, 111, 0.5),
       rgba(47, 62, 70, 0.5)
     ),
-    url("https://i.pinimg.com/736x/f5/96/27/f59627ef5f18a900c1318fbe4e43916c--model-headshots-men-photography.jpg"); */
-  /* background-repeat: no-repeat, no-repeat;
-  background-position: top;
-  background-size: 100%; */
-  margin-top: ${pxToRem(50)};
+    url("/me.jpg");*/
+  padding: ${pxToRem(80)} 0;
   margin-left: ${pxToRem(20)};
   max-width: 1440px;
 
   @media (min-width: 768px) {
-    padding-top: ${pxToRem(80)};
+    padding: ${pxToRem(180)} 0;
     margin-left: ${pxToRem(100)};
   }
   @media (min-width: 1024px) {

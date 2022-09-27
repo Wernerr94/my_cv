@@ -1,7 +1,29 @@
 import styled from "styled-components";
 import vars from "../../helpers/variables";
 import { pxToRem } from "../../helpers/variables";
+import puzzlesImg from "../../img/puzzle.png";
 
+export const Wrapper = styled.div`
+  background-image: linear-gradient(
+      to top,
+      rgba(82, 121, 111, 0.5),
+      rgba(47, 62, 70, 0.5)
+    ),
+    url(${puzzlesImg});
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: ${pxToRem(60)};
+  @media (max-width: 500px) {
+    background-position: -60%;
+  }
+  @media (max-width: 767px) {
+    background-position: top ${pxToRem(200)};
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    background-position: -85% 0;
+  }
+`;
 export const ProjectsSection = styled.section`
   max-width: 1440px;
   margin: ${pxToRem(20)};

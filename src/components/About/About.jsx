@@ -1,22 +1,17 @@
 import React from "react";
-import {
-  BoxContainer,
-  // Title,
-  ShortResumeButton,
-  Description,
-} from "./About.styled";
-export default function About({ about }) {
+import { BoxContainer, ShortResumeButton, Description } from "./About.styled";
+import "../../i18n";
+import { useTranslation } from "react-i18next";
+import { useSpring } from "react-spring";
+
+export default function About() {
+  const { t } = useTranslation();
+  const styles = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
   return (
-    <BoxContainer ref={about}>
-      <Description>
-        From the moment I wrote my first line of code I absolutely fell in love
-        with programming. Software development has never been "just a job" for
-        me, it's engaged me into the challenge of continuously learning and
-        improving my skills. In 2022 finished frontend development courses
-        html&css, JavaScript and React.js.
-      </Description>
+    <BoxContainer id="about">
+      <Description style={styles}>{t("about")}</Description>
       <ShortResumeButton>
-        <span>SHORT RESUME</span>
+        <span>DOWNLOAD RESUME</span>
       </ShortResumeButton>
     </BoxContainer>
   );
