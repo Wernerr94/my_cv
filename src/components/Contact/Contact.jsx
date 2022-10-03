@@ -12,6 +12,7 @@ import {
   SubmitButton,
 } from "./Contact.styled";
 import * as yup from "yup";
+import { useTranslation } from "react-i18next";
 
 let schema = yup.object().shape({
   guestName: yup.string().required(),
@@ -25,13 +26,12 @@ const initialValues = {
 };
 
 export default function Contact() {
-  function handleSubmit(values, actions) {
-    console.log(values);
-    console.log(actions);
-  }
+  const { t } = useTranslation();
+
+  function handleSubmit(values, actions) {}
   return (
     <ContactSection id="contact">
-      <Title>Contact</Title>
+      <Title>{t("contact")}</Title>
       <div className="contacts">
         <InfoContainer>
           <ContactItem>
@@ -65,7 +65,7 @@ export default function Contact() {
               <StyledField
                 type="text"
                 name="guestName"
-                placeholder="Name"
+                placeholder={t("name")}
                 autoComplete="off"
               />
             </label>
@@ -81,7 +81,7 @@ export default function Contact() {
               <StyledTextArea
                 type="text"
                 name="message"
-                placeholder="Message..."
+                placeholder={t("message")}
                 component="textarea"
                 rows="5"
                 cols="35"
@@ -89,7 +89,7 @@ export default function Contact() {
               />
             </label>
 
-            <SubmitButton type="submit">Send</SubmitButton>
+            <SubmitButton type="submit">{t("send")}</SubmitButton>
           </FormContainer>
         </Formik>
       </div>

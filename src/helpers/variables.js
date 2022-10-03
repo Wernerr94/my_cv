@@ -2,6 +2,7 @@
 const italicFont = `'Raleway', sans-serif`;
 const mainFont = "'Quicksand', sans-serif";
 // SIZES
+const xs = "10px";
 const sm = "12px";
 const md = "16px";
 const lg = "24px";
@@ -25,6 +26,7 @@ export function pxToRem(px) {
 const vars = {
   italicFont,
   mainFont,
+  xs,
   sm,
   md,
   lg,

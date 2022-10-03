@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import {
+  SectionTitle,
   Title,
   CoursesSection,
   CourseArticle,
   CourseDescription,
   Link,
+  ShowMoreButton,
 } from "./Courses.styled";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
@@ -13,9 +15,11 @@ export default function Courses() {
   const [openHTML, setOpenHTML] = useState(false);
   const [openJS, setOpenJS] = useState(false);
   const [openReact, setOpenReact] = useState(false);
+
   const { t } = useTranslation();
   return (
     <CoursesSection id="education">
+      <SectionTitle>{t("courses")}</SectionTitle>
       <CourseArticle>
         <Title>HTML&CSS</Title>
         <CourseDescription>{t("html")}</CourseDescription>
@@ -56,9 +60,9 @@ export default function Courses() {
             </li>
           </ul>
         )}
-        <button onClick={() => setOpenHTML(!openHTML)}>
-          {openHTML ? "close topics" : "view all course topics"}
-        </button>
+        <ShowMoreButton onClick={() => setOpenHTML(!openHTML)}>
+          {openHTML ? t("closeTopics") : t("viewTopics")}
+        </ShowMoreButton>
       </CourseArticle>
       <CourseArticle>
         <Title>JavaSript</Title>
@@ -103,16 +107,35 @@ export default function Courses() {
             </li>
           </ul>
         )}
-        <button onClick={() => setOpenJS(!openJS)}>
-          {openJS ? "close topics" : "view all course topics"}
-        </button>
+        <ShowMoreButton onClick={() => setOpenJS(!openJS)}>
+          {openJS ? t("closeTopics") : t("viewTopics")}
+        </ShowMoreButton>
       </CourseArticle>
       <CourseArticle>
         <Title>React.js&Redux </Title>
         <CourseDescription>{t("react")}</CourseDescription>
-        <button onClick={() => setOpenReact(!openReact)}>
-          {openReact ? "close topics" : "view all course topics"}
-        </button>
+        {openReact && (
+          <ul>
+            <li>
+              <CourseDescription>{t("react1")}</CourseDescription>
+            </li>
+            <li>
+              <CourseDescription>{t("react2")}</CourseDescription>
+            </li>
+            <li>
+              <CourseDescription>{t("react3")}</CourseDescription>
+            </li>
+            <li>
+              <CourseDescription>{t("react4")}</CourseDescription>
+            </li>
+            <li>
+              <CourseDescription>{t("react5")}</CourseDescription>
+            </li>
+          </ul>
+        )}
+        <ShowMoreButton onClick={() => setOpenReact(!openReact)}>
+          {openReact ? t("closeTopics") : t("viewTopics")}
+        </ShowMoreButton>
       </CourseArticle>
       <Link href="https://goit.ua/" target="_blank">
         <img

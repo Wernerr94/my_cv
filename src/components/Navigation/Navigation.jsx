@@ -50,6 +50,7 @@ export default function Navigation() {
     return innerWidth;
   }
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   function handleLanguage() {
     if (lang === "en" || lang === "en-US") {
       setLang("cz");
@@ -70,22 +71,22 @@ export default function Navigation() {
         {windowWidth > 1023 && (
           <List>
             <ListItem>
-              <Link href="#home">HOME</Link>
+              <Link href="#home">{t("h")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="#about">ABOUT</Link>
+              <Link href="#about">{t("a")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="#tech">TECH</Link>
+              <Link href="#tech">{t("t")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="#education">EDUCATION</Link>
+              <Link href="#education">{t("e")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="#projects">PROJECTS</Link>
+              <Link href="#projects">{t("p")}</Link>
             </ListItem>
             <ListItem>
-              <Link href="#contact">CONTACT</Link>
+              <Link href="#contact">{t("c")}</Link>
             </ListItem>
           </List>
         )}
@@ -94,32 +95,32 @@ export default function Navigation() {
             <List>
               <ListItem>
                 <Link href="#home" onClick={handleMenuOpen}>
-                  HOME
+                  {t("h")}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="#about" onClick={handleMenuOpen}>
-                  ABOUT
+                  {t("a")}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="#tech" onClick={handleMenuOpen}>
-                  TECH
+                  {t("t")}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="#education" onClick={handleMenuOpen}>
-                  EDUCATION
+                  {t("e")}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="#projects" onClick={handleMenuOpen}>
-                  PROJECTS
+                  {t("p")}
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="#contact" onClick={handleMenuOpen}>
-                  CONTACT
+                  {t("c")}
                 </Link>
               </ListItem>
             </List>

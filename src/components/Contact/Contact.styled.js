@@ -6,6 +6,7 @@ import { Field, Form } from "formik";
 export const ContactSection = styled.section`
   max-width: 1024px;
   margin: ${pxToRem(10)};
+  margin-bottom: 0;
   padding: ${pxToRem(10)};
   background-color: ${vars.darkGreen};
   @media (min-width: 768px) {

@@ -11,6 +11,9 @@ export const LangButton = styled.button`
   border-radius: 50%;
   padding: ${pxToRem(2)};
   color: ${vars.orange};
+  position: absolute;
+  top: 1%;
+  left: 1%;
   &:active {
     scale: calc(0.9);
   }
@@ -25,13 +28,14 @@ export const LangButton = styled.button`
 `;
 
 export const Nav = styled.nav`
-  background-color: ${vars.deepGreen};
+  background-color: ${vars.darkGreen};
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   height: ${pxToRem(50)};
   @media (min-width: 1024px) {
     position: relative;
+    padding: 0 ${pxToRem(200)};
     box-shadow: ${pxToRem(1)} ${pxToRem(1)} ${pxToRem(20)} #000;
   }
 `;
@@ -44,7 +48,7 @@ export const Link = styled.a`
 `;
 
 export const MenuIcon = styled.div`
-  background-color: ${vars.deepGreen};
+  background-color: ${vars.darkGreen};
   display: block;
 
   width: ${(props) => (props.opened ? `${pxToRem(400)}` : `${pxToRem(0)}`)};
@@ -93,7 +97,7 @@ export const MenuIcon = styled.div`
       right: 6%; */
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     right: -15%;
   }
   @media (min-width: 1024px) {
@@ -102,7 +106,7 @@ export const MenuIcon = styled.div`
 `;
 export const List = styled.ul`
   margin-top: ${pxToRem(100)};
-  margin-left: ${pxToRem(50)};
+  margin-left: ${pxToRem(100)};
   @media (min-width: 1024px) {
     max-width: 1440px;
     display: flex;
@@ -122,7 +126,7 @@ export const ListItem = styled.li`
   }
   @media (min-width: 1024px) {
     & a {
-      font-size: ${vars.md};
+      font-size: ${vars.sm};
       color: ${vars.white};
       &:hover {
         color: ${vars.orange};

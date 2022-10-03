@@ -17,7 +17,10 @@ export const BoxContainer = styled.article`
     padding: ${pxToRem(100)};
   }
   @media (min-width: 1024px) {
-    width: ${pxToRem(700)};
+    margin-top: 0;
+    padding: ${pxToRem(50)} ${pxToRem(40)};
+    width: ${pxToRem(450)};
+    height: ${pxToRem(350)};
   }
 `;
 export const Title = styled.h1`
@@ -31,6 +34,9 @@ export const Description = styled(animated.p)`
   font-family: ${vars.italicFont};
   font-weight: 300;
   font-size: ${vars.md};
+  @media (min-width: 1024px) {
+    font-size: ${vars.sm};
+  }
   &::after {
     content: "";
     display: block;
@@ -40,6 +46,9 @@ export const Description = styled(animated.p)`
     margin-top: ${pxToRem(40)};
     @media (min-width: 768px) {
       margin-top: ${pxToRem(100)};
+    }
+    @media (min-width: 1024px) {
+      margin-top: ${pxToRem(20)};
     }
   }
   @media (min-width: 768px) {
@@ -54,12 +63,18 @@ export const ShortResumeButton = styled.div`
   margin-top: ${pxToRem(40)};
   padding: ${pxToRem(20)};
   @media (min-width: 1024px) {
-    margin-top: ${pxToRem(80)};
+    margin-top: ${pxToRem(30)};
+    width: ${pxToRem(150)};
+    height: ${pxToRem(40)};
+    padding: ${pxToRem(10)};
   }
   & span {
     color: ${vars.white};
     font-size: ${vars.sm};
     font-family: ${vars.mainFont};
+    @media (min-width: 1024px) {
+      font-size: ${vars.xs};
+    }
   }
   &:focus {
     border-color: ${vars.white};

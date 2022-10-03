@@ -6,11 +6,26 @@
     "e": "EDUCATION",
     "p": "PROJECTS",
     "c": "CONTACT",
-    "i": "I",
-    "m": "M",
     "position": "Front End Developer",
     "download": "DOWNLOAD RESUME",
+
+    "en": "English",
+    "cz": "Czech",
+    "ua": "Ukrainian",
+    "ru": "Russian",
+
+    "courses": "Courses",
+    "viewTopics": "view all course topics",
+    "closeTopics": "close topics",
+    "projects": "Projects",
+    "message": "Message...",
+    "name": "Name",
+    "contact": "Contact",
+    "send": "SEND",
+
+
     "about": "From the moment I wrote my first line of code I absolutely fell in love with programming. Software development has never been 'just a job' for me, it's engaged me into the challenge of continuously learning and improving my skills. In 2022 finished frontend development courses html&css, JavaScript and React.js.",
+
     "html": "Semantic HTML - CSS technology - Flexbox technology - Responsive Web - SASS",
     "html1": " - Introduction - HTML - Tags and attributes - Overview of the main tags - Block and line elements - Absolute and relative paths - Features of graphic formats - Character substitutions - Rules of code execution - Developer Tools - Validation of HTML document",
     "html2": "- Introduction - Git sections of the project - Git States - Git Basics - The process of working with a Git project - Work with Git from the console - .gitignore file",
@@ -23,6 +38,7 @@
     "html9": " - The concept of a modular grid - Work with the grid during layout - Write a grid from scratch - CSS Frameworks - Twitter Bootstrap 4 - CSS grid - Pixel perfect layout",
     "html10": " - Cross-browser compatibility - Graceful Degradation and Progressive Enhancement - High pixel density screens - Prepare resources for Retina - SVG Basics - BEM Methodology",
     "html11": " - CSS preprocessors: SASS - Introduction to Atomization - Microdata",
+
     "js": " Arrays - Objects - Functions - OOP - Constructors - ES6 Classes - Document Object Model - NPM - Webpack - Asynchronous JavaScript - Promise API - REST API - CRUD",
     "js1": " - What is JavaScript? - Connecting the script - Console tab in Chrome DevTools - Language syntax - Variables and Data Types - User experience - Main operators - Number - String - Logical operators - Branching - Scope - Cycles",
     "js2": " - Arrays - Assignment by reference and by value - Array Methods - Functions -       Arrow functions",
@@ -36,8 +52,15 @@
     "js10": " - Plugins and libraries - Standardization - JSON - Storage of information on the client",
     "js11": " - Asynchronous JavaScript - Date class - Promise API - Event loop",
     "js12": " - Data Transfer Protocols - REST API - AJAX and Fetch API - Cross-domain queries - CRUD",
+
     "react": "JSX - CSS modules - Class Components - Listeners - Forms - HTTP queries - React Hooks - Function Components - React Router DOM - Redux Toolkit - Async Redux - RTKQuery - Web Token",
+    "react1": " - JSX - Render by condition - Collections - Inline Styles - Vanilla CSS - CSS Modules - Normalize Styles",
+    "react2": " - Class Components - Events - Inner State of Components - Forms",
+    "react3": " - Life Cycle - HTTP Request - React Hooks - React Router",
+    "react4": " - Redux - Redux Toolkit - Async Redux",
+    "react5": " - Authentication - Authorization - JSON Web Token",
+
     "munchkin": "Munchkin fallout is a board game(3-6 players) that I and my friends enjoyed playing. I can say that it has become one of the additional fervors of interest in programming. I remember how there was a very big desire to write this game. With a friend, we decided to bring it to the web. It's been a little bit of a challenge for me since this      is my first major project. Now it's currently in progress.",
-    "munchkinTech": "We used React.js, styled-components, socket.io"
+    "munchkinTech": "Design development using Photoshop. Developing modules using JavaScript, React.js and components styles according to layouts CSS and styled-components. Using third-party libraries. Collaboration with team members to implement features and bug fixing. Close cooperation with the participant in the development of the backend."
   }
 }

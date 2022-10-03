@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { pxToRem } from "../../helpers/variables";
 import { animated } from "@react-spring/web";
 import techImg from "../../img/tech.png";
+
 export const Wrapper = styled.div`
   background-image: linear-gradient(
       to top,
@@ -20,7 +21,8 @@ export const Wrapper = styled.div`
     background-position: top ${pxToRem(200)};
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    padding: ${pxToRem(180)} 0;
+    padding-bottom: ${pxToRem(180)};
+    padding-top: ${pxToRem(50)};
     background-position: -85% 0;
   }
 `;
@@ -35,6 +37,7 @@ export const TechContainer = styled(animated.div)`
     margin-inline: auto;
   }
   @media (min-width: 1024px) {
+    width: ${pxToRem(600)};
   }
 `;
 
@@ -50,7 +53,7 @@ export const List = styled.ul`
     justify-items: center;
   }
   & li {
-    width: ${pxToRem(140)};
+    width: ${pxToRem(100)};
     height: auto;
     margin-bottom: ${pxToRem(20)};
     @media (min-width: 400px) {

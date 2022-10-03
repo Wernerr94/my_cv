@@ -11,7 +11,7 @@ export default function About() {
     <BoxContainer id="about">
       <Description style={styles}>{t("about")}</Description>
       <ShortResumeButton>
-        <span>DOWNLOAD RESUME</span>
+        <span>{t("download")}</span>
       </ShortResumeButton>
     </BoxContainer>
   );

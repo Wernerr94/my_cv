@@ -8,10 +8,15 @@ export const LangList = styled.ul`
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
+  @media (min-width: 1024px) {
+    width: ${pxToRem(650)};
+  }
   & li {
     margin: auto;
     padding: ${pxToRem(10)};
     width: ${pxToRem(150)};
+    @media (min-width: 1024px) {
+      width: ${pxToRem(120)};
+    }
   }
 `;

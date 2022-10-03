@@ -12,7 +12,8 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: ${pxToRem(60)} 0;
+  padding-top: ${pxToRem(60)};
+  padding-bottom: ${pxToRem(140)};
   @media (max-width: 500px) {
     background-position: -60%;
   }
@@ -23,28 +24,24 @@ export const Container = styled.div`
     padding: ${pxToRem(180)} 0;
     background-position: -85% 0;
   }
+  @media (min-width: 1024px) {
+    padding-top: ${pxToRem(200)};
+  }
 `;
 export const Wrapper = styled.div`
   height: ${pxToRem(300)};
-  /* background-image: linear-gradient(
-      to top,
-      rgba(82, 121, 111, 0.5),
-      rgba(47, 62, 70, 0.5)
-    ),
-    url("/me.jpg");*/
   padding: ${pxToRem(80)} 0;
   margin-left: ${pxToRem(20)};
   max-width: 1440px;
 
   @media (min-width: 768px) {
-    padding: ${pxToRem(180)} 0;
+    /* padding: ${pxToRem(180)} 0; */
     margin-left: ${pxToRem(100)};
   }
   @media (min-width: 1024px) {
     padding: 0 ${pxToRem(100)};
     height: ${pxToRem(400)};
     margin: auto;
-    /* text-align: center; */
   }
 `;
 export const GreetText = styled.p`
@@ -61,7 +58,7 @@ export const GreetText = styled.p`
     font-size: ${vars.title};
   }
   @media (min-width: 1024px) {
-    font-size: ${vars.titleXxl};
+    padding-left: ${pxToRem(200)};
   }
 `;
 
@@ -74,6 +71,7 @@ export const PosText = styled.p`
     font-size: ${vars.xl};
   }
   @media (min-width: 1024px) {
-    font-size: ${vars.title};
+    font-size: ${vars.xl};
+    padding-left: ${pxToRem(200)};
   }
 `;
