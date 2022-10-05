@@ -90,7 +90,7 @@ export const Description = styled.p`
 
 export const SliderContainer = styled.div`
   max-width: 1024px;
-  margin: ${pxToRem(10)};
+  margin: auto;
   position: relative;
   @media (max-width: 767px) {
     display: none;

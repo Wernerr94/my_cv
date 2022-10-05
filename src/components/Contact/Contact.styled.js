@@ -49,9 +49,9 @@ export const Link = styled.a`
   color: ${vars.orange};
   text-decoration: none;
   & img {
-    display: block;
+    display: inline-block;
     width: ${pxToRem(30)};
-    margin: ${pxToRem(40)} auto;
+    height: ${pxToRem(30)};
   }
 `;
 
@@ -69,6 +69,7 @@ export const StyledField = styled(Field)`
   border-bottom: ${pxToRem(1)} solid ${vars.white};
   background-color: ${vars.darkGreen};
   color: ${vars.orange};
+  position: relative;
   &::placeholder {
     font-family: ${vars.italicFont};
     color: ${vars.white};
@@ -80,21 +81,20 @@ export const StyledField = styled(Field)`
     border-bottom: ${pxToRem(1)} solid ${vars.orange};
     caret-color: ${vars.orange};
   }
+  &:invalid {
+    border-color: red;
+  }
 `;
+
 export const StyledTextArea = styled(Field)`
   resize: none;
-  /* width: ${pxToRem(250)};
-  min-height: ${pxToRem(200)}; */
   background-color: ${vars.darkGreen};
   outline: 0;
   border: 0;
   caret-color: ${vars.orange};
   color: ${vars.white};
   font-family: ${vars.italicFont};
-  /* &:valid {
-    border-bottom: ${pxToRem(1)} solid ${vars.orange};
-    caret-color: ${vars.orange};
-  } */
+
   &::placeholder {
     font-family: ${vars.italicFont};
     color: ${vars.white};
@@ -104,6 +104,7 @@ export const StyledTextArea = styled(Field)`
     border: 0;
     outline: 0;
   }
+
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: ${pxToRem(2)};
@@ -126,11 +127,10 @@ export const SubmitButton = styled.button`
   padding: ${pxToRem(10)} ${pxToRem(20)};
 
   &:hover {
-    background: linear-gradient(to bottom, #fb8500 5%, #fff 100%);
+    background: linear-gradient(to bottom, #fb8500 5%, #fb8 100%);
     background-color: #fb8500;
   }
   &:active {
-    position: relative;
-    top: 1px;
+    scale: calc(0.95);
   }
 `;

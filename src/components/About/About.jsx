@@ -3,6 +3,7 @@ import { BoxContainer, ShortResumeButton, Description } from "./About.styled";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
 import { useSpring } from "react-spring";
+import resume from "../../downloads/Resume.pdf";
 
 export default function About() {
   const { t } = useTranslation();
@@ -11,7 +12,11 @@ export default function About() {
     <BoxContainer id="about">
       <Description style={styles}>{t("about")}</Description>
       <ShortResumeButton>
-        <span>{t("download")}</span>
+        <span>
+          <a href={resume} download="Verner O. Resume.pdf">
+            {t("download")}
+          </a>
+        </span>
       </ShortResumeButton>
     </BoxContainer>
   );

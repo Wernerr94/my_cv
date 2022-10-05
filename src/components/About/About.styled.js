@@ -68,7 +68,8 @@ export const ShortResumeButton = styled.div`
     height: ${pxToRem(40)};
     padding: ${pxToRem(10)};
   }
-  & span {
+  & span > a {
+    text-decoration: none;
     color: ${vars.white};
     font-size: ${vars.sm};
     font-family: ${vars.mainFont};
