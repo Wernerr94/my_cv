@@ -19,9 +19,7 @@ html {
    
     
 }
-@media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: smooth;
-	}
-    
+
+.Wrapper{
+    padding-top: 50px;
 }

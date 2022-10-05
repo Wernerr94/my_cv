@@ -44,7 +44,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <div className="Wrapper">
       <Navigation />
       <Hello />
       <Tech />
@@ -54,6 +54,6 @@ export default function App() {
           <span>&#8593;</span>
         </ToTopButton>
       )}
-    </>
+    </div>
   );
 }
