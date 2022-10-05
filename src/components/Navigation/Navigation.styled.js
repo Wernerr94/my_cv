@@ -29,7 +29,7 @@ export const LangButton = styled.button`
 
 export const Nav = styled.nav`
   background-color: ${vars.darkGreen};
-  position: sticky;
+  position: fixed;
   z-index: 1;
   width: 100%;
   height: ${pxToRem(50)};
