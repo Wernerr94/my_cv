@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    max-height: 100vh;
 }
 ul,li {
     list-style: none;
@@ -15,6 +16,4 @@ html {
 	scroll-behavior: smooth;
 }
 
-.Wrapper {
-    max-height: 100vh;
-}
+

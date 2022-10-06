@@ -23,6 +23,7 @@ export default function Projects() {
   const IMAGES = ["1.png", "2.png", "3.png", "4.png"];
   const [index, setIndex] = useState(0);
   const { t } = useTranslation();
+
   function handlePrevImage() {
     if (index === 0) {
       setIndex(IMAGES.length - 1);
@@ -37,7 +38,6 @@ export default function Projects() {
       setIndex(0);
     }
   }
-
   useEffect(() => {
     let i = setInterval(() => {
       if (index !== IMAGES.length - 1) {
