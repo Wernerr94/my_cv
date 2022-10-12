@@ -16,8 +16,8 @@
     "ru": "Rusky",
 
     "courses":"Kurzy",
-    "viewTopics": "zobrazit všechna témata kurzu",
-    "closeTopics": "zavřít témata",
+    "viewTopics": "zobrazit všechny témata kurzu",
+    "closeTopics": "zavřít všechny témata",
     "projects": "Projekty",
     "message": "Zpráva...",
     "name": "Jmeno",
@@ -25,7 +25,7 @@
     "send": "POSLAT",
 
     
-    "about": "Od chvíle, kdy jsem napsal svůj první řádek kódu, jsem se naprosto zamiloval do programování. Vývoj softwaru pro mě nikdy nebyl 'jen prací', zapojil mě do výzvy neustálého učení a zlepšování mých dovedností. V roce 2022 byly dokončeny frontendové vývojové kurzy html&css, JavaScript and React.js.",
+    "about": "Od chvíle, kdy jsem napsal svůj první řádek kódu, jsem se naprosto zamiloval do programování. Vývoj softwaru pro mě nikdy nebyl jen prací, motivoval mě k neustálému učení a zlepšování mých dovedností. V roce 2022 jsem dokončil kurzy vývojáře front-end.",
 
     "html": "Sémantické HTML - Technologie CSS - Technologie Flexbox - Responzivní web - SASS",
     "html1": " - Úvod - HTML - Značky a atributy - Přehled hlavních značek - Blokové a čárové prvky - Absolutní a relativní cesty - Vlastnosti grafických formátů - Náhrady znaků - Pravidla spouštění kódu - Vývojářské nástroje - Validace HTML dokumentu ",
@@ -61,7 +61,7 @@
     "react4": " - Redux - Redux Toolkit - Async Redux",
     "react5": " - Autentizace - Autorizace - JSON Web Token",
 
-    "munchkin": "Munchkin fallout je desková hra (3-6 hráčů), kterou jsme si s kamarády užili. Mohu říci, že se stala jedním z dalších zápalů zájmu o programování. Vzpomínám si, jak byla velká touha napsat tuto hru. S přítelem jsme se rozhodli přinést to na web. Byla to pro mě trochu výzva, protože je to můj první velký projekt. Nyní probíhá.",
-    "munchkinTech": "Vývoj návrhu pomocí aplikace Photoshop. Vývoj modulů pomocí JavaScript, React.js a stylů komponent podle rozvržení CSS a styled-components. Použití knihoven třetích stran. Spolupráce se členy týmu na implementaci funkcí a oprav chyb. Úzká spolupráce s účastníkem na vývoji backendu."
+    "munchkin": "Munchkin fallout je desková hra pro 3-6 hráčů, kterou jsme hrávali s kamarády a nadchla nás natolik, že nás napadlo, že by bylo super ji naprogramovat. Takže se stala dalším z důvodu, proč jsem se o programování začal více zajímat. Jednoho dne jsme se s kamarádem rozhodli ji přenést na web. Byla to pro nás velká výzva, protože to byl můj první projekt, na kterém doteď pracujeme.",
+    "munchkinTech": "Vývoj návrhu pomocí aplikace Photoshop. Vývoj modulů pomocí JavaScript, React.js a stylů komponent podle rozvržení CSS a styled-components. Použití knihoven třetích stran. Spolupráce se členy týmu na implementaci funkcí a oprav chyb. Úzká spolupráce s vývojařem bekendu."
   }
 }

@@ -24,7 +24,7 @@
     "send": "SEND",
 
 
-    "about": "From the moment I wrote my first line of code I absolutely fell in love with programming. Software development has never been 'just a job' for me, it's engaged me into the challenge of continuously learning and improving my skills. In 2022 finished frontend development courses html&css, JavaScript and React.js.",
+    "about": "From the moment I wrote my first line of code I absolutely fell in love with programming. Software development has never been 'just a job' for me, it's engaged me into the challenge of continuously learning and improving my skills. In 2022 I finished frontend development courses.",
 
     "html": "Semantic HTML - CSS technology - Flexbox technology - Responsive Web - SASS",
     "html1": " - Introduction - HTML - Tags and attributes - Overview of the main tags - Block and line elements - Absolute and relative paths - Features of graphic formats - Character substitutions - Rules of code execution - Developer Tools - Validation of HTML document",
@@ -60,7 +60,7 @@
     "react4": " - Redux - Redux Toolkit - Async Redux",
     "react5": " - Authentication - Authorization - JSON Web Token",
 
-    "munchkin": "Munchkin fallout is a board game(3-6 players) that I and my friends enjoyed playing. I can say that it has become one of the additional fervors of interest in programming. I remember how there was a very big desire to write this game. With a friend, we decided to bring it to the web. It's been a little bit of a challenge for me since this      is my first major project. Now it's currently in progress.",
+    "munchkin": "Munchkin fallout is a board game for 3-6 players, that I and my friends enjoyed playing. I can say that it has become one of the additional fervors of interest in programming. I remember how there was a very big desire to write this game. With a friend, we decided to bring it to the web. It's been a little bit of a challenge for me since this      is my first major project. Now it's currently in progress.",
     "munchkinTech": "Design development using Photoshop. Developing modules using JavaScript, React.js and components styles according to layouts CSS and styled-components. Using third-party libraries. Collaboration with team members to implement features and bug fixing. Close cooperation with the participant in the development of the backend."
   }
 }
