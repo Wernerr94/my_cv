@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my_cv/static/css/main.95d7226c.css",
-    "main.js": "/my_cv/static/js/main.fcf067a1.js",
+    "main.js": "/my_cv/static/js/main.ccf5ba2e.js",
     "static/media/4.png": "/my_cv/static/media/4.bdfc2f5fb2b5b312ad09.png",
     "static/media/3.png": "/my_cv/static/media/3.6a03069ac413d84dadcd.png",
     "static/media/me.jpg": "/my_cv/static/media/me.f28226767d064cf249ce.jpg",
@@ -10,7 +10,7 @@
     "static/media/tech.png": "/my_cv/static/media/tech.92f68376d67eea0a8333.png",
     "static/media/puzzle.png": "/my_cv/static/media/puzzle.53e1e270573d4a518730.png",
     "static/media/PS.png": "/my_cv/static/media/PS.da593ca359514a99ebdf.png",
-    "static/media/Resume.pdf": "/my_cv/static/media/Resume.4b49ee9d1a2f757f836f.pdf",
+    "static/media/Resume.pdf": "/my_cv/static/media/Resume.b3fb41aa98e1415c2f93.pdf",
     "static/media/redux.png": "/my_cv/static/media/redux.558c557ecb3ac89ae3d2.png",
     "static/media/css3.png": "/my_cv/static/media/css3.6364fd7dee7d0f7f07b1.png",
     "static/media/html.png": "/my_cv/static/media/html.67376cc9fd198a21dc13.png",
@@ -21,10 +21,10 @@
     "static/media/sass.png": "/my_cv/static/media/sass.1e7800226257cf0a44bf.png",
     "index.html": "/my_cv/index.html",
     "main.95d7226c.css.map": "/my_cv/static/css/main.95d7226c.css.map",
-    "main.fcf067a1.js.map": "/my_cv/static/js/main.fcf067a1.js.map"
+    "main.ccf5ba2e.js.map": "/my_cv/static/js/main.ccf5ba2e.js.map"
   },
   "entrypoints": [
     "static/css/main.95d7226c.css",
-    "static/js/main.fcf067a1.js"
+    "static/js/main.ccf5ba2e.js"
   ]
 }
