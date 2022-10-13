@@ -14,8 +14,9 @@ export const LangButton = styled.button`
   position: absolute;
   top: 1%;
   left: 1%;
+  cursor: pointer;
   &:active {
-    scale: calc(0.9);
+    scale: calc(0.95);
   }
 
   & p {

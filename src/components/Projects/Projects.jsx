@@ -20,7 +20,19 @@ import { HiChevronLeft } from "react-icons/hi";
 import { HiChevronRight } from "react-icons/hi";
 
 export default function Projects() {
-  const IMAGES = ["1.png", "2.png", "3.png", "4.png"];
+  const IMAGES = [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png",
+    "6.png",
+    "7.png",
+    "8.png",
+    "otherPlayerButtons.gif",
+    "radiation.gif",
+    "inventory.gif",
+  ];
   const [index, setIndex] = useState(0);
   const { t } = useTranslation();
 

@@ -12,12 +12,12 @@ export const ToTopButton = styled(animated.div)`
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  padding: ${pxToRem(5)};
+  padding: ${pxToRem(8)};
 
   & span {
-    line-height: ${vars.lg};
+    /* line-height: ${vars.lg}; */
     color: ${vars.orange};
-    font-size: ${vars.title};
+    font-size: ${vars.xl};
   }
   @media (min-width: 768px) {
     right: ${pxToRem(20)};

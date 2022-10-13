@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Tech from "./components/Tech/Tech";
 import "./App.css";
 import { ToTopButton } from "./layout.styled";
+import { MdNorth } from "react-icons/md";
 
 export default function App() {
   const [showButton, setShowButton] = useState(false);
@@ -51,7 +52,9 @@ export default function App() {
       <Projects />
       {showButton && (
         <ToTopButton style={props} onClick={scrollToTop}>
-          <span>&#8593;</span>
+          <span>
+            <MdNorth />
+          </span>
         </ToTopButton>
       )}
     </>
