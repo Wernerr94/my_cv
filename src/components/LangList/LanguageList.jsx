@@ -32,14 +32,14 @@ export default function LanguageList() {
     <LangList>
       <li ref={en}>
         <CircularProgressbar
-          value={enEnter ? 50 : 0}
+          value={enEnter ? 60 : 0}
           text={t("en")}
           styles={styles}
         />
       </li>
       <li ref={cz}>
         <CircularProgressbar
-          value={czEnter ? 40 : 0}
+          value={czEnter ? 50 : 0}
           text={t("cz")}
           styles={styles}
         />
